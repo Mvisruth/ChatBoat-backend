@@ -22,7 +22,7 @@
   // ✅ MongoDB connected
   mongoose
     .connect(process.env.MONGO_URL as string)
-    .then(() => console.log("MongoDB Connectedd"))
+    .then(() => console.log("MongoDB Connected"))
     .catch((err) => console.log("MongoDB Error:", err));
 
   // ✅ PLACE HERE (Schema + Model)
@@ -44,13 +44,13 @@
 
   // Test API
   app.get("/", (req, res) => {
-      console.log("inside health check");
-    res.send("Server Okk");
+      console.log("inside the server");
+    res.send("Server Ok");
   });
 
   // Chatbot API
   app.post("/api/chat", async (req, res) => {
-      console.log("inside api chat");
+      console.log("inside the chat api");
     try {
       const input = req.body.prompt;
 
