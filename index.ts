@@ -14,6 +14,7 @@
     origin: [
       "http://localhost:5173",
       "https://chat-boat-frontend.vercel.app",
+      "https://chat-bot-frontend-xi.vercel.app",
     ],
   })
 );
