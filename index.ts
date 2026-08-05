@@ -26,6 +26,10 @@
     .catch((err) => console.log("MongoDB Error:", err));
 
   // ✅ PLACE HERE (Schema + Model)
+
+console.log("MONGO_URL:", process.env.MONGO_URL);
+console.log("GROQ_API_KEY exists:", !!process.env.GROQ_API_KEY);
+
   const ChatSchema = new mongoose.Schema(
     {
       prompt: String,
